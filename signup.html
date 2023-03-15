@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <style>
+    .signup-box {
+      width: 360px;
+      height: 620px;
+      margin: auto;
+      background-color: rgb(255, 255, 255, 0.2);
+      border-radius: 15px solid rgb(255, 255, 255, 0.3);
+      box-shadow: 0px 0px 10px 0px;
+      /* position: relative; */
+      margin-top: 200px;
+      padding-top: 20px;
+      border-radius: 55px;
+      animation: move 1s infinite;
+    }
+
+    .signup-box:hover {
+
+      background-color: white;
+      animation: none;
+    }
+
+    .para-2 {
+      text-align: center;
+      color: white;
+      font-size: 15px;
+
+    }
+
+    
+
+    .button:hover {
+      background-color: #7a92be;
+      cursor: pointer;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    p {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 15px;
+    }
+
+    body {
+      background: linear-gradient(#e66465, #9198e5);
+      font-family: "Roboto", sans-serif;
+      background-repeat: no-repeat;
+      background-size: 100% 200%;
+
+    }
+
+    @keyframes colormove {
+      from {
+        background: linear-gradient(#9198e5, #e66465);
+      }
+
+    }
+
+    @keyframes move {
+      from {
+        right: 10px;
+      }
+      to {
+        left: 20px;
+      }
+
+    }
+    form {
+      width: 300px;
+      margin-left: 20px;
+    }
+
+    form label {
+      display: flex;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    form input {
+      width: 100%;
+      padding: 7px;
+      border: 1px solid gray;
+      border-radius: 10px;
+      
+      
+    }
+
+    .button {
+      width: 320px;
+      height: 35px;
+      margin-top: 20px;
+      border: none;
+      background-color: #49c1a2;
+      color: white;
+      font-size: 18px;
+    }
+    h4{
+      text-align: center;
+    }
+    a:hover{
+        color: #a30e0e;
+            cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="signup-box">
+    <h1>Sign Up</h1>
+    <h4>It's free and only takes a minute</h4>
+    <form>
+      <label>First Name</label>
+      <input type="text" placeholder="Enter your First name">
+      <label>Last Name</label>
+      <input type="text" placeholder="Enter your Last name">
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email">
+      <label>Password</label>
+      <input type="password" placeholder="Enter your password">
+      <input class="button" type="button" value="Submit">
+    </form>
+    <p>
+      By clicking the Sign Up button,you agree to our <br />
+      <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+    </p>
+  </div>
+  <p class="para-2">
+    Already have an account? <a href="Login.html">Login here</a>
+  </p>
+</body>
+
+</html>
